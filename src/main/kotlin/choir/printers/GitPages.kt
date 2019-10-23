@@ -38,11 +38,12 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
     }*/
 
   override fun visit(choir: Choir) {
-    val filename = "${choir.root}/test.md"
+    val filename = "${choir.root}/README.md"
     with (context) {
       open(filename)
       printLine("# ${choir.name}")
       printLine(choir.description)
+      printLine(choir.membersToWeb)
       /*course.flows.forEach { visit(it) }
 
       printLine("## Resources")

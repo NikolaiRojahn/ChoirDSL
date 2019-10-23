@@ -1,8 +1,9 @@
 package choir.dsl
 
 class Choir (val name: String){
-    var root: String? =null
+    var root: String = ""
     var description: String? = null
+    var membersToWeb: String = ""
 
     val members = mutableListOf<Member>()
 
