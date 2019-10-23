@@ -12,6 +12,6 @@ fun main(){
         """.trimIndent()
     }
 
-    GitHubPagesVisitor(FileContext("/Users/morte/Documents/Kotlin/Week 2 DSL/pages")).visit(choir)
+    GitHubPagesVisitor(FileContext("Users/nr/Documents/NetBeansProjects/4_Semester/Kotlin/Week2/ChoirWebPages")).visit(choir)
 
 }
