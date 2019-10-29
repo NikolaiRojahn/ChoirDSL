@@ -44,7 +44,7 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
       printLine("# ${choir.name}")
       printLine(choir.description)
       printLine("### Members")
-      printLine("| Name | Voice |", 0)
+      printLine("| **Name** | **Voice** |", 0)
       printLine(choir.membersToMarkdown(), 0)
       close()
       }
