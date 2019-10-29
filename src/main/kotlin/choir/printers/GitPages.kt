@@ -50,5 +50,14 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
       }
     }
 
+ /* override fun visit(concert: Concert) {
+    val filename = "${concert.root}/CONCERT.md"
+    with (context) {
+      open(filename)
+      printLine("# Concert")
+      close()
+    }
+  }*/
+
   }
 
