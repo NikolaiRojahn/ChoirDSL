@@ -43,30 +43,12 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
       open(filename)
       printLine("# ${choir.name}")
       printLine(choir.description)
-      printLine(choir.membersToWeb)
-      /*course.flows.forEach { visit(it) }
-
-      printLine("## Resources")
-      printResources("Slides", course.resources.filter { it is SlideShowResource })
-      printResources("Repositories", course.resources.filter { it is RepositoryResource })
-      printResources("External links", course.resources.filter { it is ExternalLinkResource })
-
-      printLine("## Assignments and Credits")
-      printLine(course.creditable)
-      printLine("| Title | Credits |", 0)
-      printLine("| :---- | ------: |", 0)
-      course.creditables.forEach {
-        if (it is Link && it.active) printLine(" | [${it.title}](${it.link}) | ${it.credits} |", 0)
-        else printLine("| ${it.title} | ${it.credits} |", 0)
-        }
-      printLine()
-      printLine("## Exam")
-      printLine(course.exam)*/
+      printLine("### Members")
+      printLine("| Name | Voice |", 0)
+      printLine(choir.membersToMarkdown(), 0)
       close()
       }
     }
-
-
 
   }
 

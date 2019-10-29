@@ -12,8 +12,7 @@ class Member (val choir: Choir, val shortVoice: Boolean,  val firstName: String)
         }
     }
 
-    override fun toString():String = "$firstName $lastName - $voice - $phone \n"
-}
+    override fun toString():String = "| $firstName | $voice |  \n"}
 
 fun Choir.member(firstName: String, shortVoice: Boolean, build: Member.() -> Unit = {}): Member {
     val member = Member(this, shortVoice, firstName)

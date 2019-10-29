@@ -8,6 +8,14 @@ class Choir (val name: String){
     val members = mutableListOf<Member>()
 
     fun add(member: Member){members.add(member)}
+
+    fun membersToMarkdown(): String{
+        var str = ""
+        for (member in members){
+            str += member.toString()
+        }
+        return str
+    }
 }
 
 fun choir(name: String, root: String, build: Choir.() -> Unit = {}): Choir {

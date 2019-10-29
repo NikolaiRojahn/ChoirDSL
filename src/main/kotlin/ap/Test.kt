@@ -18,7 +18,7 @@ fun main(){
         member("Nikolai", false)
 
         membersToWeb = """
-            ${members.toString()}
+${members.toString()}
         """.trimIndent()
     }
 
